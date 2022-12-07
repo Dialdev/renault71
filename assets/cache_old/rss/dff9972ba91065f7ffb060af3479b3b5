@@ -1,0 +1,55 @@
+O:9:"MagpieRSS":22:{s:6:"parser";i:0;s:12:"current_item";a:0:{}s:5:"items";a:2:{i:0;a:11:{s:5:"title";s:35:"About the Security Notices category";s:2:"dc";a:1:{s:7:"creator";s:11:"smashingred";}s:8:"category";s:16:"Security Notices";s:11:"description";s:451:"
+            <p>This is a sub-categrory of Announcements for Security Notices. Older security notices can be found in the archived MODX Forums here: <a href="https://forums.modx.com/board/8/security-notices">https://forums.modx.com/board/8/security-notices</a></p>
+            <p><small>1 post - 1 participant</small></p>
+            <p><a href="https://community.modx.com/t/about-the-security-notices-category/2264">Read full topic</a></p>
+          ";s:4:"link";s:69:"https://community.modx.com/t/about-the-security-notices-category/2264";s:7:"pubdate";s:31:"Fri, 14 Feb 2020 19:53:55 +0000";s:9:"discourse";a:3:{s:11:"topicpinned";s:3:"Yes";s:11:"topicclosed";s:2:"No";s:13:"topicarchived";s:2:"No";}s:4:"guid";s:29:"community.modx.com-topic-2264";s:6:"source";s:35:"About the Security Notices category";s:7:"summary";s:451:"
+            <p>This is a sub-categrory of Announcements for Security Notices. Older security notices can be found in the archived MODX Forums here: <a href="https://forums.modx.com/board/8/security-notices">https://forums.modx.com/board/8/security-notices</a></p>
+            <p><small>1 post - 1 participant</small></p>
+            <p><a href="https://community.modx.com/t/about-the-security-notices-category/2264">Read full topic</a></p>
+          ";s:14:"date_timestamp";i:1581710035;}i:1;a:11:{s:5:"title";s:34:"MODX setup/ Directory Site Exploit";s:2:"dc";a:1:{s:7:"creator";s:7:"rthrash";}s:8:"category";s:16:"Security Notices";s:11:"description";s:3582:"
+            <p>There is currently an active exploit of sites with an intact MODX Revolution <code>setup/</code> directory. This can give <em>anyone</em> on the internet complete access to your site and possibly your server with trivial effort. This directory should <em>never</em> be left in place once a site is installed.</p>
+<p>You can check if your site is vulnerable by entering your site URL with a <code>/setup/</code> added at the end, for example:</p>
+<p><strong><a href="https://www.example.com/setup/">https://www.example.com/setup/</a></strong></p>
+<p>If you see a MODX installation utility, you should log into your server via FTP or SSH <strong>immediately</strong>, and remove this directory. If your site is working as expected, your site may be safe, but please review the additional information below.</p>
+<p>Using the MODX installation script above, a malicious individual can re-install MODX and point to any database they wish including remote databases. Once a site is “re-installed” they can then use the Manager’s file manager to upload other back door files to your server. This can potentially lead to more severe issues such as having the entire server <a href="https://en.wikipedia.org/wiki/Rootkit">rootkitted</a>, setting up spam mailers, or uploading crypto miners to take advantage of computing resources on your server.</p>
+<p>If your site has been compromised or is not working correctly, and the setup folder per the above was in place, you must first re-connect your site to the correct database and server. Ask your web host or sysadmin to reset your database password and give you the new database credentials. Once you have those, update the MODX config file—by default located at <code>core/config/config.inc.php</code>—with the correct settings.</p>
+<p>You should also upgrade your MODX version to the latest production release (currently 2.7.1) and upgrade all Extras if they are not current. Keeping up with updates is critical to maintaining a secure site, as it plays a key role in <a href="https://support.modx.com/hc/en-us/articles/360010644353-How-Websites-Get-Hacked-and-How-to-Protect-Yourself">helping prevent sites from compromise</a>.</p>
+<p>Finally, you should run a malware scanner to make sure other exploits haven’t already been uploaded to your site as described above. We have a series of articles that walks you through recovering from a site compromise, which hopefully will help in this effort:</p>
+<ul>
+<li>
+<p><strong><a href="https://modx.com/blog/recovering-from-a-hacked-site-part-1">https://modx.com/blog/recovering-from-a-hacked-site-part-1</a></strong></p>
+</li>
+<li>
+<p><strong><a href="https://modx.com/blog/recovering-from-a-hacked-site-part-2">https://modx.com/blog/recovering-from-a-hacked-site-part-2</a></strong></p>
+</li>
+<li>
+<p><strong><a href="https://modx.com/blog/recovering-from-a-hacked-site-part-3">https://modx.com/blog/recovering-from-a-hacked-site-part-3</a></strong></p>
+</li>
+</ul>
+<p>If your web host, developer or sysadmin is not able to help, you can open a commercial support ticket directly with MODX by visiting <a href="https://support.modx.com/">https://support.modx.com</a> and clicking the blue “Submit a request” link in the header (please mention this post and provide your site URL). In order to assist we will need access to your server, most likely via your cPanel login.</p>
+            <p><small>1 post - 1 participant</small></p>
+            <p><a href="https://community.modx.com/t/modx-setup-directory-site-exploit/648">Read full topic</a></p>
+          ";s:4:"link";s:66:"https://community.modx.com/t/modx-setup-directory-site-exploit/648";s:7:"pubdate";s:31:"Wed, 24 Apr 2019 15:36:05 +0000";s:9:"discourse";a:3:{s:11:"topicpinned";s:2:"No";s:11:"topicclosed";s:2:"No";s:13:"topicarchived";s:2:"No";}s:4:"guid";s:28:"community.modx.com-topic-648";s:6:"source";s:34:"MODX setup/ Directory Site Exploit";s:7:"summary";s:3582:"
+            <p>There is currently an active exploit of sites with an intact MODX Revolution <code>setup/</code> directory. This can give <em>anyone</em> on the internet complete access to your site and possibly your server with trivial effort. This directory should <em>never</em> be left in place once a site is installed.</p>
+<p>You can check if your site is vulnerable by entering your site URL with a <code>/setup/</code> added at the end, for example:</p>
+<p><strong><a href="https://www.example.com/setup/">https://www.example.com/setup/</a></strong></p>
+<p>If you see a MODX installation utility, you should log into your server via FTP or SSH <strong>immediately</strong>, and remove this directory. If your site is working as expected, your site may be safe, but please review the additional information below.</p>
+<p>Using the MODX installation script above, a malicious individual can re-install MODX and point to any database they wish including remote databases. Once a site is “re-installed” they can then use the Manager’s file manager to upload other back door files to your server. This can potentially lead to more severe issues such as having the entire server <a href="https://en.wikipedia.org/wiki/Rootkit">rootkitted</a>, setting up spam mailers, or uploading crypto miners to take advantage of computing resources on your server.</p>
+<p>If your site has been compromised or is not working correctly, and the setup folder per the above was in place, you must first re-connect your site to the correct database and server. Ask your web host or sysadmin to reset your database password and give you the new database credentials. Once you have those, update the MODX config file—by default located at <code>core/config/config.inc.php</code>—with the correct settings.</p>
+<p>You should also upgrade your MODX version to the latest production release (currently 2.7.1) and upgrade all Extras if they are not current. Keeping up with updates is critical to maintaining a secure site, as it plays a key role in <a href="https://support.modx.com/hc/en-us/articles/360010644353-How-Websites-Get-Hacked-and-How-to-Protect-Yourself">helping prevent sites from compromise</a>.</p>
+<p>Finally, you should run a malware scanner to make sure other exploits haven’t already been uploaded to your site as described above. We have a series of articles that walks you through recovering from a site compromise, which hopefully will help in this effort:</p>
+<ul>
+<li>
+<p><strong><a href="https://modx.com/blog/recovering-from-a-hacked-site-part-1">https://modx.com/blog/recovering-from-a-hacked-site-part-1</a></strong></p>
+</li>
+<li>
+<p><strong><a href="https://modx.com/blog/recovering-from-a-hacked-site-part-2">https://modx.com/blog/recovering-from-a-hacked-site-part-2</a></strong></p>
+</li>
+<li>
+<p><strong><a href="https://modx.com/blog/recovering-from-a-hacked-site-part-3">https://modx.com/blog/recovering-from-a-hacked-site-part-3</a></strong></p>
+</li>
+</ul>
+<p>If your web host, developer or sysadmin is not able to help, you can open a commercial support ticket directly with MODX by visiting <a href="https://support.modx.com/">https://support.modx.com</a> and clicking the blue “Submit a request” link in the header (please mention this post and provide your site URL). In order to assist we will need access to your server, most likely via your cPanel login.</p>
+            <p><small>1 post - 1 participant</small></p>
+            <p><a href="https://community.modx.com/t/modx-setup-directory-site-exploit/648">Read full topic</a></p>
+          ";s:14:"date_timestamp";i:1556120165;}}s:7:"channel";a:5:{s:5:"title";s:33:"Security Notices - MODX Community";s:4:"link";s:62:"https://community.modx.com/c/announcements/security-notices/26";s:11:"description";s:316:"Topics in the 'Security Notices' category This is a sub-categrory of Announcements for Security Notices. Older security notices can be found in the archived MODX Forums here: <a href="https://forums.modx.com/board/8/security-notices" class="inline-onebox-loading">https://forums.modx.com/board/8/security-notices</a>";s:13:"lastbuilddate";s:31:"Fri, 14 Feb 2020 19:53:55 +0000";s:7:"tagline";s:316:"Topics in the 'Security Notices' category This is a sub-categrory of Announcements for Security Notices. Older security notices can be found in the archived MODX Forums here: <a href="https://forums.modx.com/board/8/security-notices" class="inline-onebox-loading">https://forums.modx.com/board/8/security-notices</a>";}s:9:"textinput";a:0:{}s:5:"image";a:0:{}s:9:"feed_type";s:3:"RSS";s:12:"feed_version";s:3:"2.0";s:8:"encoding";s:5:"UTF-8";s:16:"_source_encoding";s:0:"";s:5:"ERROR";s:0:"";s:7:"WARNING";s:0:"";s:19:"_CONTENT_CONSTRUCTS";a:6:{i:0;s:7:"content";i:1;s:7:"summary";i:2;s:4:"info";i:3;s:5:"title";i:4;s:7:"tagline";i:5;s:9:"copyright";}s:16:"_KNOWN_ENCODINGS";a:3:{i:0;s:5:"UTF-8";i:1;s:8:"US-ASCII";i:2;s:10:"ISO-8859-1";}s:5:"stack";a:0:{}s:9:"inchannel";b:0;s:6:"initem";b:0;s:9:"incontent";b:0;s:11:"intextinput";b:0;s:7:"inimage";b:0;s:17:"current_namespace";b:0;s:15:"source_encoding";s:5:"UTF-8";}
